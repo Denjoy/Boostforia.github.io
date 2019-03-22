@@ -1,26 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt');
-*{
-	padding: 0;
-	margin: 0;
-}
+$white:#f8f6f6;
+$gray:#747474;
+$lighter-gray:#a2a2a2;
 html{
 	scroll-behavior: smooth;
-}
-a:hover, a:focus{
-	color: #fff;
-	text-decoration: none;
-}
-li{
-	list-style: none;
 }
 body{
 	background-color: #f2f2f2;
 	font-family: 'Prompt', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	color: #555;
 
-	margin-top:70px;
 }
 p{
 	line-height: 28px;
@@ -30,20 +20,33 @@ p{
 	text-align: center;
 }
 header{
-	position: fixed;
-	display: flex;
-	padding: 40px 60px;
 	width: 100%;
-	background-color: #fff;
 	a{
-		column-rule: #969696;
+		color: $gray;
 	}
-	nav{
+	a:hover, a:focus{
+		color: $lighter-gray;
+		text-decoration: none;
+		outline: 0;
 	}
-	.header-logo{
-		float: left;
+	.navbar{
+		font-weight: 500;
+		font-size: 18px;
 	}
-	.menu{
-		float: right;
+	.navbar-inverse{
+		background-color: $white;
+		border-color: #f2f2f2; 
+	}
+}
+.main{
+	background: #353535;
+	color: $lighter-gray;
+	padding-top: 200px;
+	padding-bottom: 30px;
+	img{
+		padding-top: 170px;
+	}
+	p{
+		color: $white;
 	}
 }
