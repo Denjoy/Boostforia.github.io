@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 <body>
 	<header>
@@ -24,23 +24,27 @@
 				<a href="#navbarNav" data-toggle="collapse">Menu</a>
 				<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav navbar-right">
-					<li class="nav-item active"><a class="navbar-link" href="#">Home</a></li>
-					<li class="nav-item"><a class="navbar-link" href="#">About</a></li>
-					<li class="nav-item"><a class="navbar-link" href="#">about</a></li>
-					<li class="nav-item"><a class="navbar-link" href="#">about</a></li>
+					<li class="nav-item active"><a class="navbar-link" href="#home">Home</a></li>
+					<li class="nav-item"><a class="navbar-link" href="#about_us">About us</a></li>
+					<li class="nav-item"><a class="navbar-link" href="#our_work">Our works</a></li>
+					<li class="nav-item"><a class="navbar-link" href="#who_we_are">Team</a></li>
+					<li class="nav-item"><a class="navbar-link" href="#blog">Blog</a></li>
 					<li class="nav-item"><a class="navbar-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
 				</ul>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="main text-center">
+	<section class="main text-center" id="home">
 		<h1>WE THINK CREATIVE BE CREATIVE</h1>
 		<h2>LIKE TO DO CREATIVE WORKS</h2>
-		<img src="img/main_mouse.png" alt="">
-			<p>SCROLL DOWN</p></img>
+		<a href="#about_us">
+			<img src="img/main_mouse.png" alt="">
+				<p>SCROLL DOWN</p>
+			</img>
+		</a>
 	</section>
-	<section class="about_us text-center">
+	<section class="about_us text-center" id="about_us">
 		<div class="about_us_title my-5">
 			<h1 class="h1-responsive font-weight-bold text-center my-5">ABOUT US</h1>
 			<p class="lead grey-text text-center w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum suscipit quis voluptatem enim. Dicta reprehenderit fuga ducimus non in nisi adipisci sequi est? Corporis voluptate eaque maxime possimus, fuga!</p>
@@ -67,160 +71,389 @@
 			</div>
 		</div>
 		<div class="about_us_bottom">
-			<div class="bottom_information text-center row">
-				<div class="bottom_title col-md-12">
+			<div class="bottom_information text-center">
+				<div class="bottom_title col-md-6">
 					<h2 class="font-weight-bold">WATCH BEHIND THE SCENE</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda hic reprehenderit vitae dignissimos saepe exercitationem nisi dolorem distinctio possimus molestiae. Architecto nulla facere impedit atque aspernatur error velit laboriosam accusantium.</p>
 					<a href="">PLAY NOW</a>
 				</div>
-				<div class="bottom_right col-md-12">
+				<div class="bottom_right col-md-6">
 					<a href="#"><img src="img/about_us/play_button.png" alt=""></a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="our_work text-center">
+	<section class="our_work text-center" id="our_work">
 		<div class="our_work_title my-5">
 			<h1>OUR WORKS</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptates libero deserunt, repellendus laboriosam ut sapiente tempore explicabo quod ab earum possimus, error sit reprehenderit. Quam, atque omnis doloremque? Asperiores.</p>
 		</div>
 		<div class="our_work_menu">
 			<div class="container">
-				<div class="row">
-					<span class="navbar-link" onclick="currentSlide(1)"></span>
-					<span class="navbar-link" onclick="currentSlide(2)"></span>
-					<span class="navbar-link" onclick="currentSlide(3)"></span>
-					<span class="navbar-link" onclick="currentSlide(4)"></span>
-					<span class="navbar-link" onclick="currentSlide(5)"></span>
-				</div>
+				<button class="btn fil-cat" href="" data-rel="all">ALL PROJECT</button>
+				<button class="btn fil-cat" href="" data-rel="web">PHOTOGRAPHY</button>
+				<button class="btn fil-cat" href="" data-rel="photography">WEB DESIGN</button>
+				<button class="btn fil-cat" href="" data-rel="branding">BRANDING</button>
+				<button class="btn fil-cat" href="" data-rel="mobile">MOBILE APP</button>
 			</div>
-			<div class="work_slider_container">
-				<div class="work_slider_information fade">
+			<div style="clear:both;"></div>
+			<div id="portfolio">
+				<div class="tile   photography all">
 					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
 				</div>
-				<div class="work_slider_information fade">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
+				<div class="tile   web all">
 					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
 				</div>
-				<div class="work_slider_information fade">
+				<div class="tile   photography all">
 					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
 				</div>
-				<div class="work_slider_information fade">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
+				<div class="tile   web all">
 					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
 				</div>
-				<div class="work_slider_information fade">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
-					<img src="img/test_our_works_1.png" alt="">
+				<div class="tile   branding all">
 					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
-					<img src="img/test_our_works_2.png" alt="">
+				</div>	
+				<div class="tile   mobile all">
 					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_3.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
-					<img src="img/test_our_works_4.png" alt="">
 				</div>
+				<div class="tile   web all">
+					<img src="img/test_our_works_1.png" alt="">
+				</div>
+				<div class="tile   photography all">
+					<img src="img/test_our_works.png" alt="">
+				</div>
+				<div class="tile   web all">
+					<img src="img/test_our_works_1.png" alt="">
+				</div>
+				<div class="tile   branding all">
+					<img src="img/test_our_works_2.png" alt="">
+				</div>	
+				<div class="tile   mobile all">
+					<img src="img/test_our_works_3.png" alt="">
+				</div>
+				<div class="tile   web all">
+					<img src="img/test_our_works_1.png" alt="">
+				</div>
+				<div class="tile   branding all">
+					<img src="img/test_our_works_2.png" alt="">
+				</div>	
+				<div class="tile   web all">
+					<img src="img/test_our_works_1.png" alt="">
+				</div>
+				<div class="tile   branding all">
+					<img src="img/test_our_works_2.png" alt="">
+				</div>	
+				<div class="tile   mobile all">
+					<img src="img/test_our_works_3.png" alt="">
+				</div>	
 			</div>
+			<div style="clear:both;"></div>
 		</div>
-		<div class="clients text-center" id="wrapper">
-			<div><img src="img/themeforest.png" alt=""></div>
-			<div><img src="img/graphicriver.png" alt=""></div>
-			<div><img src="img/videohive.png" alt=""></div>
+		<div class="clients" id="wrapper">
+			<div><img src="img/clients/themeforest.png" alt=""></div>
+			<div style="padding-top: 8px;"><img src="img/clients/graphicriver.png" alt=""></div>
+			<div><img src="img/clients/videohive.png" alt=""></div>
+			<div style="padding-top: 8px;"><img src="img/clients/graphicriver.png" alt=""></div>
+			<div><img src="img/clients/videohive.png" alt=""></div>
+			<div><img src="img/clients/themeforest.png" alt=""></div>
+			<div><img src="img/clients/videohive.png" alt=""></div>
+			<div><img src="img/clients/themeforest.png" alt=""></div>
+			<div style="padding-top: 8px;"><img src="img/clients/graphicriver.png" alt=""></div>
+			<div><img src="img/clients/videohive.png" alt=""></div>
 		</div>
 	</section>
-	<footer>
+	<section class="who_we_are" id="who_we_are">
+		<div class="who_we_are_title text-center">
+			<h1>WHO WE ARE</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis sed, ut neque inventore ab officiis labore non mollitia. Maiores architecto expedita et fugit, odio nihil quae doloremque cum nemo temporibus.</p>
+		</div>
+		<div class="who_we_are_slider">
+			<div class="container all_info">
+				<div class="left_side col-md-4 text-center">
+					<span class="avatar"></span>
+					<h2>JANE SMITH</h2>
+					<h3>DESIGNER</h3>
+					<div>
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-twitter"></i></a>
+						<a href=""><i class="fab fa-facebook"></i></a>
+					</div>
+				</div>
+				<div class="right_side col-md-8">
+					<h2>MY SKILLS</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis atque omnis magni esse ipsum amet reiciendis veniam tenetur optio, quis nihil veritatis animi, ullam eius repudiandae assumenda inventore ipsam dolorum?</p>
+					<div class="skill">
+						<h3 align="left">PHOTOSHOP</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill1">|</div>
+						</div>
+						<h3 align="right">88%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">ILLUSTRATOR</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill2">|</div>
+						</div>
+						<h3 align="right">92%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">SKETCH</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill3">|</div>
+						</div>
+						<h3 align="right">90%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">AFTER EFFECTS</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill4"></div>
+						</div>
+						<h3 align="right">98%</h3>
+					</div>
+				</div>
+			</div>
+			<div class="container all_info">
+				<div class="left_side col-md-4 text-center">
+					<span class="avatar"></span>
+					<h2>DONALD MERS</h2>
+					<h3>DESIGNER</h3>
+					<div>
+						<a href=""><i class="fab fa-instagram"></i></a>
+						<a href=""><i class="fab fa-twitter"></i></a>
+						<a href=""><i class="fab fa-facebook"></i></a>
+					</div>
+				</div>
+				<div class="right_side col-md-8">
+					<h2>MY SKILLS</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis atque omnis magni esse ipsum amet reiciendis veniam tenetur optio, quis nihil veritatis animi, ullam eius repudiandae assumenda inventore ipsam dolorum?</p>
+					<div class="skill">
+						<h3 align="left">PHOTOSHOP</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill1">|</div>
+						</div>
+						<h3 align="right">70%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">ILLUSTRATOR</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill2">|</div>
+						</div>
+						<h3 align="right">80%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">SKETCH</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill3">|</div>
+						</div>
+						<h3 align="right">86%</h3>
+					</div>
+					<div class="skill">
+						<h3 align="left">AFTER EFFECTS</h3>
+						<div class="skill_bar" align="right">
+							<div class="infotmation skill4"></div>
+						</div>
+						<h3 align="right">96%</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="some_features text-center">
+		<div class="features_title">
+			<h1>SOME FEATURES</h1>
+		</div>
+		<div class="features_information">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/features/shortcodes.png" alt="">
+						<h3>Shortcodes</h3>
+						<p>46</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/features/integrated_plugins.png" alt="">
+						<h3>Integrated Plugins</h3>
+						<p>128</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/features/creative_products.png" alt="">
+						<h3>Creative Products</h3>
+						<p>450</p>
+					</div>
+					<div class="col-md-3">
+						<img src="img/features/clients_worldwide.png" alt="">
+						<h3>Clients Worldwide</h3>
+						<p>100+</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="blog_posts" id="blog">
+		<div class="blog_title text-center">
+			<h1>BLOG POSTS</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="blog_information text-left">
+			<div class="container">
+					<div class="col-md-4">
+						<div id="link_button">
+							<a href=""><img src="img/blog/link.png" alt=""></a><a href=""><img src="img/blog/watch.png" alt=""></a>
+						</div>
+						<h3>Creat Creative & Clean</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore cupiditate maxime, consequatur voluptatibus. Officiis tempore harum, ratione molestiae! Nisi architecto quas dolorem commodi est eos nulla sunt quidem odit!</p>
+						<div class="container">
+							<i class="far fa-clock col-md-6"> 25 Jun 2015</i>
+							<i class="far fa-thumbs-up col-md-3"> 25</i>
+							<i class="far fa-comment-alt col-md-3"> 11</i>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div id="link_button">
+							<a href=""><img src="img/blog/link.png" alt=""></a><a href=""><img src="img/blog/watch.png" alt=""></a>
+						</div>
+						<h3>Creat Creative & Clean</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore cupiditate maxime, consequatur voluptatibus. Officiis tempore harum, ratione molestiae! Nisi architecto quas dolorem commodi est eos nulla sunt quidem odit!</p>
+						<div class="container">
+							<i class="far fa-clock col-md-6"> 30 Jun 2015</i>
+							<i class="far fa-thumbs-up col-md-3"> 60</i>
+							<i class="far fa-comment-alt col-md-3"> 16</i>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div id="link_button">
+							<a href=""><img src="img/blog/link.png" alt=""></a><a href=""><img src="img/blog/watch.png" alt=""></a>
+						</div>
+						<h3>Creat Creative & Clean</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis tempore cupiditate maxime, consequatur voluptatibus. Officiis tempore harum, ratione molestiae! Nisi architecto quas dolorem commodi est eos nulla sunt quidem odit!</p>
+						<div class="container">
+							<i class="far fa-clock col-md-6"> 10 Jul 2015 </i>
+							<i class="far fa-thumbs-up col-md-3"> 43</i>
+							<i class="far fa-comment-alt col-md-3"> 21</i>
+						</div>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="plan text-center">
+		<div class="plan_title">
+			<h1>CHOSE PLAN</h1>
+		</div>
+		<div class="plan_information">
+			<div class="container">
+				<div class="price col-md-3">
+					<div class="plan_price">
+						<h3>BASIC</h3>
+						<h4>Free</h4>
+					</div>
+					<div class="plan_info">
+						<p><span>20</span> Pages</p>
+						<p><span>2</span> GB Storage</p>
+						<p><span>150</span> Members</p>
+						<p class="last_link"><span>2</span> Contributors</p>
+						<a href="">PURCHASE</a>
+					</div>
+				</div>
+				<div class="price col-md-3">
+					<div class="plan_price">
+						<h3>STANDART</h3>
+						<h4>$24.00</h4>
+					</div>
+					<div class="plan_info">
+						<p><span>25</span> Pages</p>
+						<p><span>10</span> GB Storage</p>
+						<p><span>300</span> Members</p>
+						<p class="last_link"><span>5</span> Contributors</p>
+						<a href="">PURCHASE</a>
+					</div>
+				</div>
+				<div class="price col-md-3">
+					<div class="plan_price">
+						<h3>PREMIUM</h3>
+						<h4>$40.00</h4>
+					</div>
+					<div class="plan_info">
+						<p><span>30</span> Pages</p>
+						<p><span>20</span> GB Storage</p>
+						<p><span>500</span> Members</p>
+						<p class="last_link"><span>10</span> Contributors</p>
+						<a href="">PURCHASE</a>
+					</div>
+				</div>
+				<div class="price col-md-3">
+					<div class="plan_price">
+						<h3>PROFESSIONAL</h3>
+						<h4>$75.00</h4>
+					</div>
+					<div class="plan_info">
+						<p><span>40</span> Pages</p>
+						<p><span>40</span> GB Storage</p>
+						<p><span>1000</span> Members</p>
+						<p class="last_link"><span>20</span> Contributors</p>
+						<a href="">PURCHASE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="get_in_touch text-center">
+		<div class="touch_title">
+			<h1>GET IN TOUCH</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cum aliquid, veniam inventore impedit quod suscipit animi repellat eum officia sunt debitis mollitia temporibus, ipsam placeat hic, asperiores earum nam!</p>
+		</div>
+		<div class="touch_info container">
+			<h3>NAME <span>*</span></h3>
+			<h3>MAIL <span>*</span></h3>
+			<input type="text">
+			<input type="text">
+		</div>
+		<div class="message">
+			<h3>MESSAGE <span>*</span></h3>
+			<input type="text">
+			<a href="">SEND MESSAGE</a>
+		</div>
+	</section>
+	<section id="map">
+		<div class="text-center">
+			<div class="locate_on_map">LOCATE ON MAP <i class="fas fa-arrow-down"></i></div>
+			<div class="map"><img src="img/map.png" alt=""></div>
+		</div>
+	</section>
+	<footer class="text-center">
+		<img src="img/company_icon.png" alt="">
+		<h1>BOOSTFOLIA</h1>
+		<h2>MADE WITH LOVE BY CREATIVEPRODUCT</h2>
+		<div>
+			<a href=""><i class="fab fa-instagram"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-facebook"></i></a>
+		</div>
 	</footer>
 
  	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/slider.js"></script>
     <script src="js/slick.js"></script>
     <script>
-    	$('.clients').slick({
-    		centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-    	});
+	    	$('.clients').slick({
+	    		slidesToShow: 3,
+	    		infinity:true,
+	    		arrows:false
+	    	});
+	    	$('.who_we_are_slider').slick({
+	    		slidesToShow: 1,
+	    		infinity:true,
+	    		arrows:false
+	    	});
+	    	$('.locate_on_map').click(function(){
+	    		$('.map').toggle()
+	    	});
     </script>
 </body>
 </html>

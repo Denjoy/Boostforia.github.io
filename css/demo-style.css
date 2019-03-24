@@ -5,6 +5,8 @@ html {
 body {
   background-color: #f2f2f2 !important;
   font-family: 'Roboto', sans-serif !important; }
+  body a {
+    font-weight: 1000; }
 
 header {
   position: fixed;
@@ -17,21 +19,23 @@ header {
     text-decoration: none;
     outline: 0; }
   header .navbar {
-    font-weight: 500;
+    font-weight: 800;
     font-size: 18px; }
   header .navbar-inverse {
     background-color: #f8f6f6;
     border-color: #f2f2f2; }
 
 .main {
-  background: #353535;
+  background: #171f23;
   color: #ebebeb;
-  padding-top: 200px;
+  padding-top: 300px;
   padding-bottom: 30px; }
   .main img {
     padding-top: 170px; }
   .main p {
     color: #f8f6f6; }
+  .main a {
+    text-decoration: none; }
 
 .about_us .about_us_title {
   padding: 0px 20%; }
@@ -50,8 +54,7 @@ header {
   background: #171f23;
   color: #f8f6f6; }
   .about_us .about_us_bottom .bottom_information {
-    display: grid;
-    grid-template-columns: auto auto; }
+    display: flex; }
   .about_us .about_us_bottom .bottom_title {
     padding-top: 60px; }
     .about_us .about_us_bottom .bottom_title h2 {
@@ -70,10 +73,11 @@ header {
       color: #f8f6f6; }
   .about_us .about_us_bottom .bottom_right {
     padding: 0;
-    background: url(../img/about_us/about_background.png) no-repeat; }
+    background: url(../img/about_us/about_background.png) no-repeat;
+    background-size: 100%; }
     .about_us .about_us_bottom .bottom_right img {
       background-color: rgba(0, 0, 0, 0.75);
-      padding: 162px 290px; }
+      padding: 20% 43.9%; }
     .about_us .about_us_bottom .bottom_right img:hover {
       background: rgba(0, 0, 0, 0.5); }
 
@@ -84,17 +88,281 @@ header {
     padding: 10px 0; }
   .our_work .our_work_title p {
     padding: 20px 0;
-    font-size: 16px; }
+    font-size: 18px; }
 .our_work .work_menu {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto; }
-.our_work .work_slider_container .work_slider_info a {
+  /*	display: grid;
+  	grid-template-columns: auto auto auto auto auto;
+  */ }
+  .our_work .work_menu .btn {
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    padding: .5rem 1rem;
+    margin: 0;
+    height: auto;
+    vertical-align: middle;
+    color: #747474;
+    background-color: rgba(0, 0, 0, 0); }
+  .our_work .work_menu .btn:hover {
+    text-decoration: none; }
+.our_work .work_slider_container #portfolio {
+  margin: 1rem 0;
+  column-count: 3;
+  column-gap: 1rem;
+  column-width: 20%; }
+.our_work .work_slider_container .tile {
+  transform: scale(0);
+  transition: all 350ms ease; }
+  .our_work .work_slider_container .tile img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem; }
+.our_work .work_slider_container .scale-anm {
+  transform: scale(1); }
+.our_work .work_slider_container #wrapper {
+  background-color: #171f23;
+  padding: 100px 25% 100px 29%; }
+
+.who_we_are {
+  padding-top: 40px;
+  padding-bottom: 100px; }
+  .who_we_are .who_we_are_title {
+    padding: 0 20%; }
+    .who_we_are .who_we_are_title h1 {
+      background: url(../img/title_border.png) no-repeat center bottom;
+      padding: 20px 0; }
+    .who_we_are .who_we_are_title p {
+      padding: 20px 0;
+      font-size: 18px; }
+  .who_we_are .who_we_are_slider {
+    padding-top: 60px; }
+    .who_we_are .who_we_are_slider .all_info {
+      display: flex !important;
+      flex-direction: row; }
+    .who_we_are .who_we_are_slider .left_side {
+      background-color: #ebebeb;
+      padding-top: 60px;
+      margin-right: 20px; }
+      .who_we_are .who_we_are_slider .left_side h2 {
+        padding-top: 20px;
+        font-weight: 800;
+        font-size: 24px; }
+      .who_we_are .who_we_are_slider .left_side h3 {
+        font-weight: 300;
+        font-size: 16px;
+        padding-bottom: 15px; }
+      .who_we_are .who_we_are_slider .left_side .avatar {
+        height: 100px;
+        width: 100px;
+        background-color: #f26c4f;
+        border-radius: 50%;
+        display: inline-block;
+        padding-bottom: 20px; }
+      .who_we_are .who_we_are_slider .left_side .fab {
+        padding: 5px;
+        color: #747474; }
+      .who_we_are .who_we_are_slider .left_side .fab:hover {
+        color: #b7b7b7; }
+    .who_we_are .who_we_are_slider .right_side {
+      padding: 100px 5% 30px 5%;
+      background-color: #ebebeb; }
+      .who_we_are .who_we_are_slider .right_side h2 {
+        font-weight: 1000;
+        font-size: 24px; }
+      .who_we_are .who_we_are_slider .right_side h3 {
+        font-weight: 800;
+        font-size: 16px; }
+      .who_we_are .who_we_are_slider .right_side p {
+        font-size: 16px;
+        padding-bottom: 15px; }
+      .who_we_are .who_we_are_slider .right_side .skill_bar {
+        height: 10%;
+        background: #ddd;
+        text-align: left;
+        margin-top: 8px; }
+      .who_we_are .who_we_are_slider .right_side .skill {
+        display: grid;
+        grid-template-columns: 150px 450px 40px; }
+      .who_we_are .who_we_are_slider .right_side .skill1 {
+        height: 100%;
+        width: 88%;
+        background-color: #f26c4f;
+        font-size: 1px; }
+      .who_we_are .who_we_are_slider .right_side .skill2 {
+        height: 100%;
+        width: 92%;
+        background-color: #f26c4f;
+        font-size: 1px; }
+      .who_we_are .who_we_are_slider .right_side .skill3 {
+        height: 100%;
+        width: 90%;
+        background-color: #f26c4f;
+        font-size: 1px; }
+      .who_we_are .who_we_are_slider .right_side .skill4 {
+        height: 100%;
+        width: 98%;
+        background-color: #f26c4f;
+        font-size: 1px; }
+
+.some_features {
+  padding: 60px 0;
+  background: #171f23;
   color: #f8f6f6; }
-.our_work .work_slider_container .work_slider_info button {
-  text-decoration: none; }
-.our_work .work_slider_container .fade {
+  .some_features .features_title h1 {
+    background: url(../img/title_border.png) no-repeat center bottom;
+    padding: 20px 0; }
+  .some_features .features_information {
+    padding-top: 50px; }
+    .some_features .features_information img {
+      margin: 10px; }
+    .some_features .features_information h3 {
+      font-weight: 400;
+      margin: 10px; }
+    .some_features .features_information p {
+      font-weight: 1000;
+      font-size: 46px; }
+
+.blog_posts {
+  padding-bottom: 120px; }
+  .blog_posts .blog_title {
+    padding: 60px 25%; }
+    .blog_posts .blog_title h1 {
+      background: url(../img/title_border.png) no-repeat center bottom;
+      padding: 20px 0; }
+    .blog_posts .blog_title p {
+      padding: 60px 0;
+      font-size: 18px; }
+  .blog_posts #link_button {
+    background: url(../url/blog/background.png) no-repeat;
+    background-size: 100%;
+    padding: 100px; }
+    .blog_posts #link_button a {
+      margin: 10px; }
+    .blog_posts #link_button a:hover {
+      background: #ebebeb; }
+  .blog_posts .container {
+    display: flex; }
+    .blog_posts .container .col-md-4 {
+      background: #ebebeb;
+      margin-right: 20px; }
+    .blog_posts .container h3 {
+      padding: 15px; }
+    .blog_posts .container p {
+      padding: 15px; }
+    .blog_posts .container .far {
+      padding-bottom: 20px; }
+
+.plan {
+  color: #f8f6f6;
+  background: #171f23;
+  padding: 40px 0 100px 0; }
+  .plan h1 {
+    background: url(../img/title_border.png) no-repeat center bottom;
+    padding: 20px 0; }
+  .plan .plan_information {
+    padding-top: 60px; }
+    .plan .plan_information .price:hover {
+      border: 2px solid #de4d3f; }
+      .plan .plan_information .price:hover span {
+        color: #de4d3f; }
+    .plan .plan_information .container {
+      display: flex; }
+      .plan .plan_information .container .plan_price {
+        background-color: #0e1316;
+        padding: 20px; }
+        .plan .plan_information .container .plan_price h3 {
+          font-weight: 1000;
+          font-size: 12px;
+          margin-bottom: 0; }
+        .plan .plan_information .container .plan_price h4 {
+          font-weight: 300;
+          font-size: 42px;
+          margin-bottom: 0; }
+      .plan .plan_information .container .plan_info {
+        background-color: #1f282c;
+        padding: 20px 20px 60px 20px; }
+        .plan .plan_information .container .plan_info .last_link {
+          padding-bottom: 30px; }
+        .plan .plan_information .container .plan_info a {
+          color: #f8f6f6;
+          padding: 5px 30px;
+          background-color: #f26c4f; }
+        .plan .plan_information .container .plan_info a:hover {
+          background-color: #de4d3f;
+          padding: 5px 30px;
+          color: #f8f6f6;
+          text-decoration: none; }
+        .plan .plan_information .container .plan_info span {
+          font-weight: 1000; }
+
+.get_in_touch {
+  padding: 100px 0; }
+  .get_in_touch span {
+    color: #de4d3f; }
+  .get_in_touch input {
+    padding-bottom: 20px; }
+  .get_in_touch .touch_title h1 {
+    background: url(../img/title_border.png) no-repeat center bottom;
+    padding: 20px 0; }
+  .get_in_touch .touch_title p {
+    padding: 60px 25%;
+    font-size: 18px; }
+  .get_in_touch .touch_info {
+    display: grid;
+    grid-template-columns: auto auto; }
+    .get_in_touch .touch_info input {
+      border: 2px solid #de4d3f;
+      margin: 10px 10%; }
+  .get_in_touch .message {
+    display: grid;
+    grid-template-rows: auto auto auto; }
+    .get_in_touch .message input {
+      border: 2px solid #de4d3f;
+      margin: 10px 17% 60px 17%; }
+  .get_in_touch h3 {
+    font-weight: 1000;
+    font-size: 14px; }
+  .get_in_touch a {
+    background-color: #f26c4f;
+    padding: 5px 30px;
+    margin: 0 auto;
+    color: #f8f6f6; }
+  .get_in_touch a:hover {
+    background-color: #de4d3f;
+    text-decoration: none;
+    color: #f8f6f6; }
+
+.locate_on_map {
+  padding: 20px 0;
+  color: #f8f6f6;
+  background: #0c1215;
+  font-weight: 700;
+  font-size: 20px; }
+
+.map img {
+  width: 100%;
   display: none; }
-.our_work #wrapper {
-  background-color: #747474; }
+
+footer {
+  background: #171f23;
+  padding: 30px;
+  color: #f8f6f6; }
+  footer .fab {
+    padding: 5px;
+    color: #747474; }
+  footer .fab:hover {
+    color: #b7b7b7; }
+  footer img {
+    padding-bottom: 10px; }
+  footer h1 {
+    font-weight: 1000;
+    font-size: 20px; }
+  footer h2 {
+    font-weight: 800;
+    font-size: 16px; }
 
 /*# sourceMappingURL=demo-style.css.map */

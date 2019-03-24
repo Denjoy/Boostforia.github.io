@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt|Roboto:300');
 $white:#f8f6f6;
 $gray:#747474;
-$lighter-gray:#ebebeb;
+$lightish-gray:#ebebeb;
+$lightish-red:#f26c4f;
+$dark-blue:#171f23;
 html{
 	scroll-behavior: smooth;
 }
 body{
 	background-color: #f2f2f2 !important;
 	font-family: 'Roboto', sans-serif !important;
+	a{
+		font-weight: 1000;
+	}
 
 }
 header{
@@ -18,12 +23,12 @@ header{
 		color: $gray;
 	}
 	a:hover, a:focus{
-		color: $lighter-gray;
+		color: $lightish-gray;
 		text-decoration: none;
 		outline: 0;
 	}
 	.navbar{
-		font-weight: 500;
+		font-weight: 800;
 		font-size: 18px;
 	}
 	.navbar-inverse{
@@ -32,15 +37,18 @@ header{
 	}
 }
 .main{
-	background: #353535;
-	color: $lighter-gray;
-	padding-top: 200px;
+	background: $dark-blue;
+	color: $lightish-gray;
+	padding-top: 300px;
 	padding-bottom: 30px;
 	img{
 		padding-top: 170px;
 	}
 	p{
 		color: $white;
+	}
+	a{
+	text-decoration: none;
 	}
 }
 .about_us{
@@ -58,16 +66,15 @@ header{
 		img{
 			padding: 15px;
 		}
-		background: $lighter-gray;
+		background: $lightish-gray;
 		margin: 0 45px;
 		padding: 20px;
 	}
 	.about_us_bottom{
-		background: #171f23;
+		background: $dark-blue;
 		color: $white;
 		.bottom_information{
-		display: grid;
-		grid-template-columns: auto auto;
+			display: flex;
 		}
 		.bottom_title{
 			padding-top: 60px;
@@ -88,15 +95,15 @@ header{
 				background-color: #de4d3f;
 				padding: 5px 30px;
 				color: $white;
-
 			}
 		}
 		.bottom_right{
 			padding: 0;
 			background: url(../img/about_us/about_background.png) no-repeat;
+			background-size: 100%;
 			img{
 				background-color: rgba(0,0,0,0.75);
-				padding: 162px 290px;
+				padding: 20% 43.9%;
 
 			}
 			img:hover{
@@ -114,29 +121,366 @@ header{
 		}
 		p{
 			padding: 20px 0;
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 	.work_menu{
-    	display: grid;
+    /*	display: grid;
     	grid-template-columns: auto auto auto auto auto;
+    */
+    	.btn{
+    		font-size: 1rem;
+    		font-weight: normal;
+    		text-decoration: none;
+    		cursor: pointer;
+    		display: inline-block;
+    		line-height: normal;
+    		padding: .5rem 1rem;
+    		margin: 0;
+    		height: auto;
+			vertical-align: middle;
+			color: $gray;
+			background-color: rgba(0,0,0,0);
+    	}
+    	.btn:hover{
+    		text-decoration: none;
+    	}
+
     }
     .work_slider_container{
-    	.work_slider_info{
-	    	a{
-	    		color: $white;
-	    	}
-	    	button{
-	    		text-decoration: none;
-	    	}
-	    }
-	    .fade{
-	    	display: none;
-	   		}    
-		
-	}
-	#wrapper{
-		background-color: $gray;
+    	#portfolio{
+    		margin: 1rem 0;
+    		column-count: 3;
+    		column-gap: 1rem;
+    		column-width: 20%;
+    	}
+    	.tile{
+    		transform: scale(0);
+    		transition: all 350ms ease;
+    		img{
+    			max-width: 100%;
+    			width: 100%;
+    			height: auto;
+    			margin-bottom: 1rem;
+    		}
+    	}
+    	.scale-anm{
+    		transform: scale(1);
+    	}
+		#wrapper{
+			background-color: $dark-blue;
+			padding: 100px 25% 100px 29%; 
+		}
 	}
 }
-
+.who_we_are{
+	padding-top: 40px;
+	padding-bottom: 100px;
+	.who_we_are_title{
+		padding: 0 20%;
+		h1{
+			background: url(../img/title_border.png) no-repeat center bottom;
+			padding: 20px 0;
+		}
+		p{
+			padding: 20px 0;
+			font-size: 18px;
+		}
+	}
+	.who_we_are_slider{
+		padding-top: 60px;
+		.all_info{
+			display: flex !important;
+			flex-direction: row;
+		}
+		.left_side{
+			background-color: $lightish-gray;
+			padding-top: 60px;
+			margin-right: 20px;
+			h2{
+				padding-top: 20px;
+				font-weight: 800;
+				font-size: 24px;
+			}
+			h3{
+				font-weight: 300;
+				font-size: 16px;
+				padding-bottom: 15px;
+			}
+			.avatar{
+				height: 100px;
+				width: 100px;
+				background-color: $lightish-red;
+				border-radius: 50%;
+				display: inline-block;
+				padding-bottom: 20px;
+			}
+			.fab{
+				padding: 5px;
+				color: $gray;
+			}
+			.fab:hover{
+				color: #b7b7b7;
+			}
+		}
+		
+		.right_side{
+			padding: 100px 5% 30px 5%;
+			background-color: $lightish-gray;
+			h2{
+				font-weight: 1000;
+				font-size: 24px;
+			}
+			h3{
+				font-weight: 800;
+				font-size: 16px;
+			}
+			p{
+				font-size: 16px;
+				padding-bottom: 15px;
+			}
+			.skill_bar{
+				height: 10%;
+				background: #ddd;
+				text-align: left;
+				margin-top: 8px;	
+			}
+			.skill{
+				display: grid;
+				grid-template-columns: 150px 450px 40px;
+			}
+			.skill1{
+				height:100%; 
+				width: 88%; 
+				background-color: $lightish-red;
+				font-size: 1px;
+			}
+			.skill2{
+				height:100%;
+				width: 92%; 
+				background-color: $lightish-red;
+				font-size: 1px;
+			}
+			.skill3{
+				height:100%;
+				width: 90%; 
+				background-color: $lightish-red;
+				font-size: 1px;
+			}
+			.skill4{
+				height:100%;
+				width: 98%; 
+				background-color: $lightish-red;
+				font-size: 1px;
+			}
+		}
+	}
+}
+.some_features{
+	padding: 60px 0;
+	background: $dark-blue;
+	color: $white;
+	.features_title{
+		h1{
+			background: url(../img/title_border.png) no-repeat center bottom;
+			padding: 20px 0;
+		}
+	}
+	.features_information{
+		padding-top: 50px;
+		img{
+			margin: 10px;
+		}
+		h3{
+			font-weight: 400;
+			margin: 10px;
+		}
+		p{
+			font-weight: 1000;
+			font-size: 46px;
+		}
+	}
+}
+.blog_posts{
+	padding-bottom: 120px;
+	.blog_title{
+		padding: 60px 25%;
+		h1{
+			background: url(../img/title_border.png) no-repeat center bottom;
+			padding: 20px 0;
+		}
+		p{
+			padding: 60px 0;
+			font-size: 18px;
+		}
+	}
+	#link_button{
+		background: url(../url/blog/background.png) no-repeat;
+		background-size: 100%;
+		padding: 100px;
+		a{
+			margin: 10px;
+		}
+		a:hover{
+			background: $lightish-gray;
+		}
+	}
+	.container{
+		display: flex;
+		.col-md-4{
+			background: $lightish-gray;
+			margin-right: 20px; 
+		}
+		h3{
+			padding: 15px;
+		}
+		p{
+			padding: 15px;
+		}
+		.far{
+			padding-bottom: 20px;
+		}
+	}
+}
+.plan{
+	color: $white;
+	background: $dark-blue;
+	padding: 40px 0 100px 0;
+	h1{
+		background: url(../img/title_border.png) no-repeat center bottom;
+		padding: 20px 0;
+	}
+	.plan_information{
+		padding-top: 60px;
+		.price:hover{
+			border:2px solid #de4d3f;
+			span{
+				color: #de4d3f;
+			}
+		}
+		.container{
+			display: flex;
+			.plan_price{
+				background-color: #0e1316;
+				padding: 20px;
+				h3{
+					font-weight: 1000;
+					font-size: 12px;
+					margin-bottom: 0;
+				}
+				h4{
+					font-weight: 300;
+					font-size: 42px;
+					margin-bottom: 0;
+				}
+			}
+			.plan_info{
+				background-color: #1f282c;
+				padding: 20px 20px 60px 20px;
+				.last_link{
+					padding-bottom:30px; 
+				}
+				a{
+					color: $white;
+					padding: 5px 30px;
+					background-color: $lightish-red;
+				}
+				a:hover{
+					background-color: #de4d3f;
+					padding: 5px 30px;
+					color: $white;
+					text-decoration: none;
+				}
+				span{
+					font-weight: 1000;
+				}
+			}
+		}
+	}
+}
+.get_in_touch{
+	padding: 100px 0;
+	span{
+		color: #de4d3f;
+	}
+	input{
+		padding-bottom: 20px;
+	}
+	.touch_title{
+		h1{
+			background: url(../img/title_border.png) no-repeat center bottom;
+			padding: 20px 0;
+		}
+		p{
+			padding: 60px 25%;
+			font-size: 18px;
+		}
+	}
+	.touch_info{
+		display: grid;
+		grid-template-columns: auto auto;
+		input{
+			border: 2px solid #de4d3f;
+			margin: 10px 10%;
+		}
+	}
+	.message{
+		display: grid;
+		grid-template-rows: auto auto auto;
+		input{
+			border:2px solid #de4d3f;
+			margin: 10px 17% 60px 17%;
+		}
+	}
+	h3{
+		font-weight: 1000;
+		font-size: 14px;
+	}
+	a{
+		background-color: $lightish-red;
+	    padding: 5px 30px;
+    	margin: 0 auto;
+    	color: $white;
+	}
+	a:hover{
+		background-color: #de4d3f;
+		text-decoration: none;
+		color: $white;
+	}
+}
+.locate_on_map{
+	padding: 20px 0;
+	color: $white;
+	background: #0c1215;
+	font-weight:700;
+	font-size: 20px;
+}
+.map{
+	img{
+		width: 100%;
+		display: none;
+	}
+}
+footer{
+	background: $dark-blue;
+	padding: 30px;
+	color: $white;
+	.fab{
+		padding: 5px;
+		color: $gray;
+	}
+	.fab:hover{
+		color: #b7b7b7;
+	}
+	img{
+		padding-bottom: 10px;
+	}
+	h1{
+		font-weight: 1000;
+		font-size: 20px;	
+	}
+	h2{
+		font-weight: 800;
+		font-size: 16px;
+	}
+}
