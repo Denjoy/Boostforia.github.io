@@ -22,7 +22,10 @@ header{
 	a{
 		color: $gray;
 	}
-	a:hover, a:focus{
+	img:hover{
+		opacity: .75;
+	}
+	a:hover{
 		color: $lightish-gray;
 		text-decoration: none;
 		outline: 0;
@@ -52,6 +55,8 @@ header{
 	}
 }
 .about_us{
+	padding-top: 80px;
+    padding-bottom: 80px;
 	.about_us_title{
 		padding: 0px 20%;
 		h1{
@@ -113,6 +118,7 @@ header{
 	}
 }
 .our_work{
+	padding-top: 80px;
 	.our_work_title{
 		padding: 0 20%;
 		h1{
@@ -124,57 +130,54 @@ header{
 			font-size: 18px;
 		}
 	}
-	.work_menu{
-    /*	display: grid;
-    	grid-template-columns: auto auto auto auto auto;
-    */
-    	.btn{
-    		font-size: 1rem;
-    		font-weight: normal;
-    		text-decoration: none;
-    		cursor: pointer;
-    		display: inline-block;
-    		line-height: normal;
-    		padding: .5rem 1rem;
-    		margin: 0;
-    		height: auto;
-			vertical-align: middle;
-			color: $gray;
-			background-color: rgba(0,0,0,0);
-    	}
-    	.btn:hover{
-    		text-decoration: none;
-    	}
-
-    }
-    .work_slider_container{
-    	#portfolio{
-    		margin: 1rem 0;
-    		column-count: 3;
-    		column-gap: 1rem;
-    		column-width: 20%;
-    	}
-    	.tile{
-    		transform: scale(0);
-    		transition: all 350ms ease;
-    		img{
-    			max-width: 100%;
-    			width: 100%;
-    			height: auto;
-    			margin-bottom: 1rem;
-    		}
-    	}
-    	.scale-anm{
-    		transform: scale(1);
-    	}
-		#wrapper{
-			background-color: $dark-blue;
-			padding: 100px 25% 100px 29%; 
-		}
+	#portfolio {  
+	    margin: 1rem 0;
+	    -webkit-column-count: 3; 
+	    -moz-column-count: 3;
+	    column-count: 4;
+	    -webkit-column-gap: 1rem;
+	    -moz-column-gap: 1rem;
+	    column-gap: 1rem;
+	}
+	.tile img {
+	    max-width: 100%;
+	    width: 100%;
+	    height: auto;
+	    margin-bottom: 1rem;
+	}
+	.btn {
+	    font-family: Lato;
+	    font-size: 1rem;
+	    font-weight: normal;
+	    text-decoration: none;
+	    cursor: pointer;
+	    display: inline-block;
+	    line-height: normal;
+	    padding: .5rem 1rem;
+	    margin: 0;
+	    height: auto;
+	    vertical-align: middle;
+	    -webkit-appearance: none;
+	    color: #555;
+	    background-color: rgba(0, 0, 0, 0);
+	}
+	.btn:hover {
+		outline: none;
+	  border-color: var(--darken-2);
+	  box-shadow: 0 0 0 3px var(--darken-3);
+	}
+	.btn:focus{
+	  outline: none;
+	  border-color: var(--darken-2);
+	  box-shadow: 0 0 0 3px var(--darken-3);
+	}
+	#wrapper{
+		background-color: $dark-blue;
+		padding: 100px 25% 100px 29%; 
 	}
 }
 .who_we_are{
-	padding-top: 40px;
+	padding-top: 80px;
 	padding-bottom: 100px;
 	.who_we_are_title{
 		padding: 0 20%;
@@ -303,8 +306,9 @@ header{
 }
 .blog_posts{
 	padding-bottom: 120px;
+	padding-top: 80px;
 	.blog_title{
-		padding: 60px 25%;
+		padding: 0 25%;
 		h1{
 			background: url(../img/title_border.png) no-repeat center bottom;
 			padding: 20px 0;
@@ -314,22 +318,12 @@ header{
 			font-size: 18px;
 		}
 	}
-	#link_button{
-		background: url(../url/blog/background.png) no-repeat;
-		background-size: 100%;
-		padding: 100px;
-		a{
-			margin: 10px;
-		}
-		a:hover{
-			background: $lightish-gray;
-		}
-	}
 	.container{
 		display: flex;
 		.col-md-4{
 			background: $lightish-gray;
-			margin-right: 20px; 
+			padding: 0;
+   			border: 10px solid #f2f2f2;
 		}
 		h3{
 			padding: 15px;
@@ -339,6 +333,20 @@ header{
 		}
 		.far{
 			padding-bottom: 20px;
+		}
+	}	
+	#link_button{	
+		background: rgba(0,0,0,.75);
+		padding: 87px;
+		img{
+			padding: 10px;
+		}
+		img:hover{
+			opacity: .75;
+		}
+		&:hover{
+			background: url(../img/blog/background.png) no-repeat;
+			background-size: 100%;
 		}
 	}
 }
@@ -354,6 +362,7 @@ header{
 		padding-top: 60px;
 		.price:hover{
 			border:2px solid #de4d3f;
+			margin: -2px 0;
 			span{
 				color: #de4d3f;
 			}
@@ -417,21 +426,26 @@ header{
 		}
 	}
 	.touch_info{
-		display: grid;
-		grid-template-columns: auto auto;
-		input{
-			border: 2px solid #de4d3f;
-			margin: 10px 10%;
-		}
-	}
-	.message{
-		display: grid;
-		grid-template-rows: auto auto auto;
-		input{
-			border:2px solid #de4d3f;
-			margin: 10px 17% 60px 17%;
-		}
-	}
+        display: grid;
+        grid-template-columns: auto auto;
+        input{
+            margin: 10px 10%;
+			background: rgba(0,0,0,0);
+			border-style: none;
+    		border-bottom: 1px solid $gray;
+        }
+    }
+    .message{
+        display: grid;
+        grid-template-rows: auto auto auto;
+        padding-top:40px; 
+        input{
+            margin: 10px 17% 60px 17%;
+            background: rgba(0,0,0,0);
+            border-style: none;
+  		  	border-bottom: 1px solid $gray;
+        }
+    }
 	h3{
 		font-weight: 1000;
 		font-size: 14px;
@@ -456,9 +470,9 @@ header{
 	font-size: 20px;
 }
 .map{
+	display: none;
 	img{
 		width: 100%;
-		display: none;
 	}
 }
 footer{
@@ -474,6 +488,9 @@ footer{
 	}
 	img{
 		padding-bottom: 10px;
+	}
+	img:hover{
+		opacity: .75;
 	}
 	h1{
 		font-weight: 1000;
