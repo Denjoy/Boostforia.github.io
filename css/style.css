@@ -40,10 +40,9 @@ header {
     text-decoration: none; }
 
 .about_us {
-  padding-top: 80px;
-  padding-bottom: 80px; }
+  padding-top: 40px; }
   .about_us .about_us_title {
-    padding: 0px 20%; }
+    padding: 20px 20%; }
     .about_us .about_us_title h1 {
       background: url(../img/title_border.png) no-repeat center bottom;
       padding: 10px 0; }
@@ -87,14 +86,14 @@ header {
         background: rgba(0, 0, 0, 0.5); }
 
 .our_work {
-  padding-top: 80px; }
+  padding-top: 40px; }
   .our_work .our_work_title {
-    padding: 0 20%; }
+    padding: 20px 20%; }
     .our_work .our_work_title h1 {
       background: url(../img/title_border.png) no-repeat center bottom;
-      padding: 10px 0; }
+      padding-bottom: 10px; }
     .our_work .our_work_title p {
-      padding: 20px 0;
+      padding-bottom: 20px;
       font-size: 18px; }
   .our_work #portfolio {
     margin: 1rem 0;
@@ -137,7 +136,7 @@ header {
     padding: 100px 25% 100px 29%; }
 
 .who_we_are {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 100px; }
   .who_we_are .who_we_are_title {
     padding: 0 20%; }
@@ -237,7 +236,7 @@ header {
 
 .blog_posts {
   padding-bottom: 120px;
-  padding-top: 80px; }
+  padding-top: 40px; }
   .blog_posts .blog_title {
     padding: 0 25%; }
     .blog_posts .blog_title h1 {
@@ -260,7 +259,7 @@ header {
       padding-bottom: 20px; }
   .blog_posts #link_button {
     background: rgba(0, 0, 0, 0.75);
-    padding: 87px; }
+    padding: 77px; }
     .blog_posts #link_button img {
       padding: 20px;
       margin: 0 auto; }
@@ -315,7 +314,8 @@ header {
           font-weight: 1000; }
 
 .get_in_touch {
-  padding: 100px 0; }
+  padding-top: 40px;
+  padding-bottom: 100px; }
   .get_in_touch span {
     color: #de4d3f; }
   .get_in_touch input {
@@ -388,4 +388,4 @@ footer {
     font-weight: 800;
     font-size: 16px; }
 
-/*# sourceMappingURL=demo-style.css.map */
+/*# sourceMappingURL=style.css.map */
