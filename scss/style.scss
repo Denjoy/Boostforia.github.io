@@ -103,6 +103,9 @@ header{
 			img:hover{
 				opacity: 0.75;
 			}
+			img{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -237,10 +240,6 @@ header{
 				text-align: left;
 				margin-top: 8px;	
 			}
-			.skill{
-				display: grid;
-				grid-template-columns: 150px 450px 40px;
-			}
 			.skill1{
 				height:100%; 
 				width: 88%; 
@@ -327,10 +326,6 @@ header{
 	#link_button{	
 		background: rgba(0,0,0,.75);
 		padding: 77px;
-		img{
-			padding: 20px;
-			margin: 0 auto;
-		}
 		img:hover{
 			opacity: .75;
 		}
@@ -338,6 +333,9 @@ header{
 			background: url(../img/blog/background.png) no-repeat;
 			background-size: 100%;
 		}
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-self: center;
 	}
 }
 .plan{
@@ -357,8 +355,12 @@ header{
 				color: #de4d3f;
 			}
 		}
-		.container{
-			display: flex;
+		.price{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.row{
+			margin: auto;
 			.plan_price{
 				background-color: #0e1316;
 				padding: 20px;
@@ -417,8 +419,6 @@ header{
 		}
 	}
 	.touch_info{
-        display: grid;
-        grid-template-columns: auto auto;
         input{
             margin: 10px 10%;
 			background: rgba(0,0,0,0);
@@ -493,3 +493,21 @@ footer{
 	}
 }
 
+@media (min-width: 1024px) {
+	.skill{
+		display: grid;
+		grid-template-columns: 20% 60% 10%;
+	}
+}
+@media (min-width: 768px) {
+	.skill{
+		display: grid;
+		grid-template-columns: 35% 60% 10%;
+	}
+}
+@media (max-width: 767px) {
+	.skill{
+		display: grid;
+		grid-template-columns: auto;
+	}
+}

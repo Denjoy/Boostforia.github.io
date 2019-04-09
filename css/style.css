@@ -74,6 +74,8 @@ header {
       padding: 0; }
       .about_us .about_us_bottom .bottom_right img:hover {
         opacity: 0.75; }
+      .about_us .about_us_bottom .bottom_right img {
+        width: 100%; }
 
 .our_work {
   padding-top: 40px; }
@@ -182,9 +184,6 @@ header {
         background: #ddd;
         text-align: left;
         margin-top: 8px; }
-      .who_we_are .who_we_are_slider .right_side .skill {
-        display: grid;
-        grid-template-columns: 150px 450px 40px; }
       .who_we_are .who_we_are_slider .right_side .skill1 {
         height: 100%;
         width: 88%;
@@ -249,10 +248,10 @@ header {
       padding-bottom: 20px; }
   .blog_posts #link_button {
     background: rgba(0, 0, 0, 0.75);
-    padding: 77px; }
-    .blog_posts #link_button img {
-      padding: 20px;
-      margin: 0 auto; }
+    padding: 77px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: center; }
     .blog_posts #link_button img:hover {
       opacity: .75; }
     .blog_posts #link_button:hover {
@@ -273,34 +272,37 @@ header {
       margin: -2px 0; }
       .plan .plan_information .price:hover span {
         color: #de4d3f; }
-    .plan .plan_information .container {
-      display: flex; }
-      .plan .plan_information .container .plan_price {
+    .plan .plan_information .price {
+      padding-top: 20px;
+      padding-bottom: 20px; }
+    .plan .plan_information .row {
+      margin: auto; }
+      .plan .plan_information .row .plan_price {
         background-color: #0e1316;
         padding: 20px; }
-        .plan .plan_information .container .plan_price h3 {
+        .plan .plan_information .row .plan_price h3 {
           font-weight: 1000;
           font-size: 12px;
           margin-bottom: 0; }
-        .plan .plan_information .container .plan_price h4 {
+        .plan .plan_information .row .plan_price h4 {
           font-weight: 300;
           font-size: 42px;
           margin-bottom: 0; }
-      .plan .plan_information .container .plan_info {
+      .plan .plan_information .row .plan_info {
         background-color: #1f282c;
         padding: 20px 20px 60px 20px; }
-        .plan .plan_information .container .plan_info .last_link {
+        .plan .plan_information .row .plan_info .last_link {
           padding-bottom: 30px; }
-        .plan .plan_information .container .plan_info a {
+        .plan .plan_information .row .plan_info a {
           color: #f8f6f6;
           padding: 5px 30px;
           background-color: #f26c4f; }
-        .plan .plan_information .container .plan_info a:hover {
+        .plan .plan_information .row .plan_info a:hover {
           background-color: #de4d3f;
           padding: 5px 30px;
           color: #f8f6f6;
           text-decoration: none; }
-        .plan .plan_information .container .plan_info span {
+        .plan .plan_information .row .plan_info span {
           font-weight: 1000; }
 
 .get_in_touch {
@@ -316,14 +318,11 @@ header {
   .get_in_touch .touch_title p {
     padding: 60px 25%;
     font-size: 18px; }
-  .get_in_touch .touch_info {
-    display: grid;
-    grid-template-columns: auto auto; }
-    .get_in_touch .touch_info input {
-      margin: 10px 10%;
-      background: rgba(0, 0, 0, 0);
-      border-style: none;
-      border-bottom: 1px solid #747474; }
+  .get_in_touch .touch_info input {
+    margin: 10px 10%;
+    background: rgba(0, 0, 0, 0);
+    border-style: none;
+    border-bottom: 1px solid #747474; }
   .get_in_touch .message {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -377,5 +376,18 @@ footer {
   footer h2 {
     font-weight: 800;
     font-size: 16px; }
+
+@media (min-width: 1024px) {
+  .skill {
+    display: grid;
+    grid-template-columns: 20% 60% 10%; } }
+@media (min-width: 768px) {
+  .skill {
+    display: grid;
+    grid-template-columns: 35% 60% 10%; } }
+@media (max-width: 767px) {
+  .skill {
+    display: grid;
+    grid-template-columns: auto; } }
 
 /*# sourceMappingURL=style.css.map */
