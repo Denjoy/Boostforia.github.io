@@ -15,6 +15,7 @@ body{
 	}
 
 }
+
 header{
 	position: fixed;
 	z-index: 10;
@@ -54,6 +55,7 @@ header{
 	text-decoration: none;
 	}
 }
+
 .about_us{
 	padding-top: 40px;
 	.about_us_title{
@@ -66,24 +68,19 @@ header{
 	.about_us_information{
 		padding: 40px 0 120px 0;
 	}
-	.col-md-3{
-		img{
-			padding: 15px;
-		}
-		background: $lightish-gray;
-		margin: 0 45px;
-		padding: 20px;
-	}
+
 	.about_us_bottom{
 		background: $dark-blue;
 		color: $white;
 		.bottom_information{
 			display: flex;
+			.row{
+				margin: 0;
+			}
 		}
 		.bottom_title{
-			padding-top: 60px;
+			padding: 60px 0;
 			h2{
-				padding: 20px 0;
 				font-weight: 800;
 			}
 			p{
@@ -103,15 +100,8 @@ header{
 		}
 		.bottom_right{
 			padding: 0;
-			background: url(../img/about_us/about_background.png) no-repeat;
-			background-size: 100%;
-			img{
-				background-color: rgba(0,0,0,0.75);
-				padding: 20% 44%;
-
-			}
 			img:hover{
-				background: rgba(0,0,0,0.5);
+				opacity: 0.75;
 			}
 		}
 	}
@@ -502,3 +492,4 @@ footer{
 		font-size: 16px;
 	}
 }
+

@@ -48,21 +48,16 @@ header {
       padding: 10px 0; }
   .about_us .about_us_information {
     padding: 40px 0 120px 0; }
-  .about_us .col-md-3 {
-    background: #ebebeb;
-    margin: 0 45px;
-    padding: 20px; }
-    .about_us .col-md-3 img {
-      padding: 15px; }
   .about_us .about_us_bottom {
     background: #171f23;
     color: #f8f6f6; }
     .about_us .about_us_bottom .bottom_information {
       display: flex; }
+      .about_us .about_us_bottom .bottom_information .row {
+        margin: 0; }
     .about_us .about_us_bottom .bottom_title {
-      padding-top: 60px; }
+      padding: 60px 0; }
       .about_us .about_us_bottom .bottom_title h2 {
-        padding: 20px 0;
         font-weight: 800; }
       .about_us .about_us_bottom .bottom_title p {
         padding: 20px 20%; }
@@ -76,14 +71,9 @@ header {
         padding: 5px 30px;
         color: #f8f6f6; }
     .about_us .about_us_bottom .bottom_right {
-      padding: 0;
-      background: url(../img/about_us/about_background.png) no-repeat;
-      background-size: 100%; }
-      .about_us .about_us_bottom .bottom_right img {
-        background-color: rgba(0, 0, 0, 0.75);
-        padding: 20% 44%; }
+      padding: 0; }
       .about_us .about_us_bottom .bottom_right img:hover {
-        background: rgba(0, 0, 0, 0.5); }
+        opacity: 0.75; }
 
 .our_work {
   padding-top: 40px; }
