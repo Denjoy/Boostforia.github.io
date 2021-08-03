@@ -251,7 +251,7 @@ header {
     padding: 77px;
     display: grid;
     grid-template-columns: auto auto;
-    justify-self: center; }
+    justify-items: center; }
     .blog_posts #link_button img:hover {
       opacity: .75; }
     .blog_posts #link_button:hover {
